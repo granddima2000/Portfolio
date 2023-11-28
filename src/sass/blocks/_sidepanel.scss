@@ -1,0 +1,47 @@
+.sidepanel {
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    height: 340px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+                transition: 0.5s all;
+            }
+        }
+    }
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background: #000;
+    }
+    &__text {
+        writing-mode:vertical-rl;
+        transform: rotate(180deg);
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+        /* width: 25px;
+        height: 150px; */
+        /* span {
+            display: block;
+            transform: rotate(-90deg) translate(-35%, -260%);
+            width: 150px;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            
+        } */
+        
+    }
+}
+.hidden {
+    opacity: 0;
+  }
